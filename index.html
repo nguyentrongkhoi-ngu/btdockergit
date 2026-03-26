@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF - The King of Europe</title>
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">NguyenTrongKhoi</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#honors">Honors</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>REAL MADRID CF</h1>
+            <p>The Greatest Club in the World</p>
+            <div class="cta-buttons">
+                <a href="#history" class="btn primary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="history" class="glass-section">
+        <div class="container">
+            <h2>Our Legacy</h2>
+            <p>Founded in 1902, Real Madrid has become a global icon, representing excellence, passion, and unparalleled success in the world of football.</p>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>15</h3>
+                    <p>Champions League</p>
+                </div>
+                <div class="stat-card">
+                    <h3>36</h3>
+                    <p>La Liga Titles</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1902</h3>
+                    <p>Founded</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="honors">
+        <div class="container">
+            <h2>Legendary Success</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>The Galácticos</h3>
+                    <p>A history of bringing together the world's best players to create magic on the pitch.</p>
+                </div>
+                <div class="card">
+                    <h3>Santiago Bernabéu</h3>
+                    <p>Our majestic home, a temple of football where history is written in every match.</p>
+                </div>
+                <div class="card">
+                    <h3>White Heart</h3>
+                    <p>Hala Madrid y nada más. A battle cry that echoes through generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game" class="game-section">
+        <div class="container">
+            <h2>Penalty Shootout</h2>
+            <div class="game-container">
+                <div class="score-board">
+                    <p>Score: <span id="score-value">0</span> | Streak: <span id="streak-value">0</span></p>
+                    <p id="game-message">Wait for it...</p>
+                </div>
+                
+                <div class="game-wrapper">
+                    <!-- Power Bar (Vertical) -->
+                    <div class="power-bar-container">
+                        <div id="power-indicator" class="power-indicator"></div>
+                        <span class="bar-label">POWER</span>
+                    </div>
+
+                    <div id="goal-area" class="goal-area">
+                        <div id="goalkeeper" class="goalkeeper">
+                            <div class="gk-body"></div>
+                        </div>
+                        <div id="ball" class="ball"></div>
+                    </div>
+                </div>
+
+                <!-- Direction Bar (Horizontal) -->
+                <div class="direction-bar-container">
+                    <div id="direction-indicator" class="direction-indicator"></div>
+                    <span class="bar-label">DIRECTION</span>
+                </div>
+
+                <div class="game-controls">
+                    <button id="shoot-btn" class="btn primary">LOCK & SHOOT</button>
+                </div>
+                <p class="game-hint">Lock BOTH Direction and Power for the perfect shot!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Real Madrid CF. Hala Madrid!</p>
+    </footer>
+    <script src="game.js?v=1.1"></script>
+</body>
+</html>
